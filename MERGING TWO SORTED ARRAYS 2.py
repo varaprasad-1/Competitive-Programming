@@ -6,8 +6,8 @@ b=list(map(int,input().split()))
 for i in b:
     a.append(i)
 
-for i in range(0,n+m-2):
-    for j in range(i,n+m-1):
+for i in range(0,n+m-1):
+    for j in range(i,n+m):
         if a[j]<a[i]:
             a[i],a[j]=a[j],a[i]
 print(*a)
