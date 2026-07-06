@@ -3,12 +3,12 @@ a=list(map(int,input().split()))
 
  # this loop is to check whether there are any negative numbers in the starting of the list, so we can skip them
 i=0
-for i in range(0,len(a)):
+for i in range(0,n):
     if a[i]>0:
         break
 sum=0
-for j in range(i,len(a)):
-    if j==len(a)-1: 
+for j in range(i,n):
+    if j==n-1: 
         if a[j]<0:  #if the last element is negative, we can skip it
             break
         else:
